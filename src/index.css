@@ -1,13 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* 🌍 Base body */
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  min-height: 100vh;
+  position: relative;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* 🌄 Background image layer */
+body::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background-image: url("./assets/trip.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  filter: brightness(1.1); /* adjust brightness */
+  z-index: -2;
+}
+
+/* 🧾 Semi-transparent overlay for readability */
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background: rgba(255, 255, 255, 0.3); /* <-- reduce from 0.92 to 0.3 */
+  z-index: -1;
 }

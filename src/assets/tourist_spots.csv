@@ -1,0 +1,51 @@
+id,district,spot_name,image_url,best_time_to_visit,latitude,longitude,description
+1,Coimbatore,Marudhamalai Temple,https://upload.wikimedia.org/wikipedia/commons/4/49/Marudhamalai.jpg,Nov-Feb,11.0168,76.9558,Ancient hill temple with scenic views.
+2,Coimbatore,VOC Park & Zoo,https://upload.wikimedia.org/wikipedia/commons/7/70/VOC_Park_Coimbatore.jpg,Oct-Mar,11.0168,76.9558,Zoo and recreational park popular with families.
+3,Coimbatore,Dhyanalinga,https://upload.wikimedia.org/wikipedia/commons/3/3b/Dhyanalinga.jpg,Oct-Mar,11.013,76.955,Unique meditative temple attracting spiritual visitors.
+4,Coimbatore,Perur Pateeswarar Temple,https://upload.wikimedia.org/wikipedia/commons/2/2c/Perur_Temple.jpg,Oct-Feb,11.008,76.96,Historic Dravidian temple with intricate carvings.
+5,Coimbatore,Nilgiri Biosphere,https://upload.wikimedia.org/wikipedia/commons/1/17/Nilgiris_Hills.jpg,Nov-Apr,11.01,76.97,Biodiverse hill region for nature enthusiasts.
+6,Coimbatore,Gandhipuram Market,https://upload.wikimedia.org/wikipedia/commons/9/95/Gandhipuram_Market.jpg,All Year,11.017,76.955,Famous local market for food and shopping.
+7,Coimbatore,Anna Zoological Park,https://upload.wikimedia.org/wikipedia/commons/7/74/Anna_Zoo.jpg,Nov-Mar,11.0135,76.9605,Popular zoo with diverse animal species.
+8,Coimbatore,Periyanaickenpalayam Lake,https://upload.wikimedia.org/wikipedia/commons/5/5d/Lake_Coimbatore.jpg,Oct-Mar,11.018,76.954,Scenic lake ideal for boating and picnics.
+9,Coimbatore,Brookefields Mall,https://upload.wikimedia.org/wikipedia/commons/8/8f/Brookefields_Coimbatore.jpg,All Year,11.02,76.96,Shopping mall with entertainment and dining options.
+10,Coimbatore,Spencer Plaza,https://upload.wikimedia.org/wikipedia/commons/1/12/Spencer_Plaza_Coimbatore.jpg,All Year,11.015,76.958,Modern shopping complex with food courts.
+11,Coimbatore,Perur Lake,https://upload.wikimedia.org/wikipedia/commons/5/5d/Perur_Lake_Coimbatore.jpg,Oct-Mar,11.012,76.961,Tranquil lake surrounded by greenery.
+12,Coimbatore,Anamalai Tiger Reserve,https://upload.wikimedia.org/wikipedia/commons/9/90/Anamalai_Tiger_Reserve.jpg,Nov-Apr,10.8,76.9,Tiger reserve and wildlife sanctuary in Western Ghats.
+13,Coimbatore,Kovai Kutralam Falls,https://upload.wikimedia.org/wikipedia/commons/0/05/Kovai_Kutralam.jpg,Jul-Sep,11.02,76.95,Waterfalls surrounded by lush forest for adventure seekers.
+14,Coimbatore,Thirumoorthy Dam,https://upload.wikimedia.org/wikipedia/commons/2/29/Thirumoorthy_Dam.jpg,Oct-Mar,11.0,76.97,Dam with serene environment and boating activities.
+15,Coimbatore,Chinna Suriyanarayan Temple,https://upload.wikimedia.org/wikipedia/commons/3/3c/Chinna_Suriyanarayan.jpg,Oct-Feb,11.014,76.956,Historic temple with rich architecture.
+16,Coimbatore,Brookefields Food Court,https://upload.wikimedia.org/wikipedia/commons/8/8f/Brookefields_Coimbatore.jpg,All Year,11.02,76.96,Popular food court for local and international cuisine.
+17,Coimbatore,RS Puram Bakery,https://upload.wikimedia.org/wikipedia/commons/1/15/RS_Puram_Bakery.jpg,All Year,11.01,76.96,Famous bakery offering local delicacies.
+18,Coimbatore,VOC Park Aquarium,https://upload.wikimedia.org/wikipedia/commons/7/70/VOC_Park_Coimbatore.jpg,All Year,11.0168,76.9558,Aquarium inside VOC park displaying aquatic species.
+19,Coimbatore,Tidel Park Coimbatore,https://upload.wikimedia.org/wikipedia/commons/0/0b/Tidel_Park_Coimbatore.jpg,All Year,11.015,76.957,IT park with modern architecture and nearby cafes.
+20,Coimbatore,Masani Amman Temple,https://upload.wikimedia.org/wikipedia/commons/9/95/Masani_Amman_Temple.jpg,Oct-Feb,11.005,76.95,Famous temple known for local rituals.
+21,Chennai,Marina Beach,https://upload.wikimedia.org/wikipedia/commons/1/15/Marina_Beach_Chennai.jpg,Nov-Feb,13.05,80.2828,Famous beach stretching along the Bay of Bengal.
+22,Chennai,Kapaleeshwarar Temple,https://upload.wikimedia.org/wikipedia/commons/2/2d/Kapaleeshwarar_Temple.jpg,Oct-Feb,13.033,80.267,Historic Dravidian-style temple in Mylapore.
+23,Chennai,Fort St. George,https://upload.wikimedia.org/wikipedia/commons/1/1c/Fort_St_George.jpg,Nov-Mar,13.0827,80.2812,British-era fort housing government buildings and museum.
+24,Chennai,Santhome Cathedral,https://upload.wikimedia.org/wikipedia/commons/3/32/Santhome_Cathedral.jpg,Oct-Feb,13.0431,80.2711,Neo-Gothic cathedral built over St. Thomas tomb.
+25,Chennai,Guindy National Park,https://upload.wikimedia.org/wikipedia/commons/2/2c/Guindy_National_Park.jpg,Nov-Mar,13.01,80.225,Urban national park with diverse flora and fauna.
+26,Chennai,Cholamandal Artists' Village,https://upload.wikimedia.org/wikipedia/commons/5/5f/Cholamandal_Artists_Village.jpg,All Year,13.017,80.22,Art village showcasing contemporary Indian art.
+27,Chennai,Express Avenue Mall,https://upload.wikimedia.org/wikipedia/commons/1/12/Express_Avenue_Mall.jpg,All Year,13.062,80.251,Shopping and entertainment complex with multiple cuisines.
+28,Chennai,Little Mount Shrine,https://upload.wikimedia.org/wikipedia/commons/7/77/Little_Mount_Shrine.jpg,Oct-Feb,13.019,80.232,Pilgrimage site with historical importance.
+29,Chennai,Elliot's Beach,https://upload.wikimedia.org/wikipedia/commons/3/3b/Elliots_Beach_Chennai.jpg,Nov-Mar,13.05,80.27,Relaxing beach popular with locals and tourists.
+30,Chennai,Kalakshetra Foundation,https://upload.wikimedia.org/wikipedia/commons/2/2b/Kalakshetra_Chennai.jpg,All Year,13.04,80.233,Cultural academy promoting classical dance and music.
+31,Chennai,MGR Film City,https://upload.wikimedia.org/wikipedia/commons/0/0c/MGR_Film_City_Chennai.jpg,All Year,13.01,80.21,Film studio complex and tourist attraction.
+32,Chennai,Pondy Bazaar,https://upload.wikimedia.org/wikipedia/commons/5/5d/Pondy_Bazaar_Chennai.jpg,All Year,13.0625,80.2515,Popular market for shopping and street food.
+33,Chennai,VGP Universal Kingdom,https://upload.wikimedia.org/wikipedia/commons/3/31/VGP_Universal_Kingdom.jpg,Oct-Mar,13.082,80.282,Amusement park and family entertainment center.
+34,Chennai,Theosophical Society,https://upload.wikimedia.org/wikipedia/commons/1/1b/Theosophical_Society_Chennai.jpg,All Year,13.03,80.22,Historical site with gardens and cultural importance.
+35,Chennai,Saint Thomas Mount,https://upload.wikimedia.org/wikipedia/commons/2/23/Saint_Thomas_Mount.jpg,Oct-Feb,13.01,80.22,Hillock with church and panoramic city view.
+36,Chennai,Mylapore Market,https://upload.wikimedia.org/wikipedia/commons/3/30/Mylapore_Market.jpg,All Year,13.035,80.271,Traditional market famous for food and handicrafts.
+37,Chennai,Semmozhi Poonga,https://upload.wikimedia.org/wikipedia/commons/1/11/Semmozhi_Poonga_Chennai.jpg,All Year,13.043,80.259,Botanical garden with diverse plant species.
+38,Chennai,Chennai Rail Museum,https://upload.wikimedia.org/wikipedia/commons/2/2d/Chennai_Rail_Museum.jpg,All Year,13.05,80.259,Museum displaying historic trains and artifacts.
+39,Chennai,MGR Memorial,https://upload.wikimedia.org/wikipedia/commons/1/1a/MGR_Memorial_Chennai.jpg,All Year,13.062,80.282,Memorial of former Chief Minister of Tamil Nadu.
+40,Chennai,Chennai Snake Park,https://upload.wikimedia.org/wikipedia/commons/3/3c/Chennai_Snake_Park.jpg,Nov-Mar,13.05,80.255,Snake park with reptile exhibits for tourists.
+41,Coimbatore,Sivanmalai Murugan Temple,https://upload.wikimedia.org/wikipedia/commons/2/21/Sivanmalai.jpg,Oct-Feb,11.015,76.95,Hill temple dedicated to Lord Murugan.
+42,Coimbatore,RSPuram Coffee Shops,https://upload.wikimedia.org/wikipedia/commons/1/15/RS_Puram_Bakery.jpg,All Year,11.012,76.958,Famous cafes and local coffee shops.
+43,Coimbatore,Siruvani Waterfalls,https://upload.wikimedia.org/wikipedia/commons/4/46/Siruvani_Falls.jpg,Jul-Sep,11.007,76.93,Scenic waterfall known for its natural beauty.
+44,Coimbatore,Eachanari Vinayagar Temple,https://upload.wikimedia.org/wikipedia/commons/1/12/Eachanari_Vinayagar.jpg,Oct-Feb,11.002,76.96,Famous temple dedicated to Lord Ganesha.
+45,Coimbatore,Tirupur Textile Market,https://upload.wikimedia.org/wikipedia/commons/0/0b/Tirupur_Market.jpg,All Year,11.01,77.0,Shopping destination for textiles and fabrics.
+46,Coimbatore,Indira Gandhi Wildlife Sanctuary,https://upload.wikimedia.org/wikipedia/commons/3/31/Indira_Gandhi_Sanctuary.jpg,Nov-Mar,10.9,76.9,Wildlife sanctuary with diverse flora and fauna.
+47,Coimbatore,PSG Tech Campus,https://upload.wikimedia.org/wikipedia/commons/0/0b/PSG_Tech_Campus.jpg,All Year,11.02,76.96,Educational campus and tech park.
+48,Chennai,Chennai Citi Center,https://upload.wikimedia.org/wikipedia/commons/1/12/Citi_Center_Chennai.jpg,All Year,13.06,80.25,Shopping complex with restaurants and entertainment.
+49,Chennai,Thousand Lights Mosque,https://upload.wikimedia.org/wikipedia/commons/5/50/Thousand_Lights_Mosque.jpg,All Year,13.059,80.261,Historic mosque famous for architecture and events.
+50,Chennai,Saidapet Market,https://upload.wikimedia.org/wikipedia/commons/1/11/Saidapet_Market.jpg,All Year,13.046,80.243,Popular market offering food and local products.
