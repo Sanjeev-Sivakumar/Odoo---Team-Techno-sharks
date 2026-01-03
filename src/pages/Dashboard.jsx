@@ -5,19 +5,22 @@ function Dashboard() {
   const navigate = useNavigate();
   const [trips, setTrips] = useState([]);
   const [userType, setUserType] = useState("User");
+  const [gtid, setGtid] = useState("");
 
   useEffect(() => {
     const savedTrips = JSON.parse(localStorage.getItem("trips") || "[]");
     setTrips(savedTrips);
-  }, []);
 
-  const promptGTIDAndNavigate = (path) => {
-    const gtid = prompt("Please enter your GTID to continue:");
-    if (gtid) {
-      localStorage.setItem("currentGTID", gtid);
-      navigate(path);
+    const storedGTID = localStorage.getItem("currentGTID");
+    if (storedGTID) setGtid(storedGTID);
+    else {
+      const entered = prompt("Please enter your GTID to continue:");
+      if (entered) {
+        localStorage.setItem("currentGTID", entered);
+        setGtid(entered);
+      }
     }
-  };
+  }, []);
 
   const handleUserTypeChange = (e) => {
     setUserType(e.target.value);
@@ -29,6 +32,17 @@ function Dashboard() {
     { name: "VOC Park & Zoo", desc: "Popular zoo and recreational park.", img: "/assets/placeholder.jpg" },
     { name: "Dhyanalinga", desc: "Meditative temple attracting spiritual visitors.", img: "/assets/placeholder.jpg" },
   ];
+
+  const promptNavigate = (path) => {
+    if (!gtid) {
+      const entered = prompt("Please enter your GTID to continue:");
+      if (entered) {
+        localStorage.setItem("currentGTID", entered);
+        setGtid(entered);
+      } else return;
+    }
+    navigate(path);
+  };
 
   return (
     <div
@@ -47,8 +61,9 @@ function Dashboard() {
             </p>
           </div>
 
-          {/* User/Admin Dropdown - Positioned to the right */}
-          <div>
+          {/* User/Admin Dropdown */}
+          <div className="flex items-center gap-4">
+            <span className="text-blue-700 font-medium">GTID: {gtid || "Not set"}</span>
             <select
               value={userType}
               onChange={handleUserTypeChange}
@@ -57,35 +72,41 @@ function Dashboard() {
               <option value="User">User</option>
               <option value="Admin">Admin</option>
             </select>
+            <button
+              onClick={() => navigate("/profile")}
+              className="px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition"
+            >
+              Profile
+            </button>
           </div>
         </div>
       </div>
 
       {/* Main Content */}
       <div className="max-w-7xl mx-auto px-6 mt-36">
-        {/* Quick Action Buttons */}
+        {/* Quick Actions */}
         <div className="flex flex-col sm:flex-row justify-center items-center gap-6 mb-12">
           <button
-            onClick={() => promptGTIDAndNavigate("/plan-trip")}
-            className="px-6 py-3 bg-blue-600 text-white rounded-full hover:bg-blue-700 transition-all ease-in-out transform hover:scale-105"
+            onClick={() => promptNavigate("/plan-trip")}
+            className="px-6 py-3 bg-blue-600 text-white rounded-full hover:bg-blue-700 transition-all transform hover:scale-105"
           >
             Plan New Trip
           </button>
           <button
-            onClick={() => promptGTIDAndNavigate("/trip-history")}
-            className="px-6 py-3 bg-blue-600 text-white rounded-full hover:bg-blue-700 transition-all ease-in-out transform hover:scale-105"
+            onClick={() => promptNavigate("/trip-history")}
+            className="px-6 py-3 bg-blue-600 text-white rounded-full hover:bg-blue-700 transition-all transform hover:scale-105"
           >
             Trip History
           </button>
           <button
-            onClick={() => navigate("/city-search")}
-            className="px-6 py-3 bg-blue-600 text-white rounded-full hover:bg-blue-700 transition-all ease-in-out transform hover:scale-105"
+            onClick={() => promptNavigate("/city-search")}
+            className="px-6 py-3 bg-blue-600 text-white rounded-full hover:bg-blue-700 transition-all transform hover:scale-105"
           >
             City Search
           </button>
           <button
-            onClick={() => navigate("/activity-search")}
-            className="px-6 py-3 bg-blue-600 text-white rounded-full hover:bg-blue-700 transition-all ease-in-out transform hover:scale-105"
+            onClick={() => promptNavigate("/activity-search")}
+            className="px-6 py-3 bg-blue-600 text-white rounded-full hover:bg-blue-700 transition-all transform hover:scale-105"
           >
             Activity Search
           </button>
@@ -98,7 +119,7 @@ function Dashboard() {
             <div className="text-center py-16 bg-white/70 p-8 rounded-lg shadow-xl">
               <p className="text-xl mb-4 text-blue-700">No trips planned yet!</p>
               <button
-                onClick={() => promptGTIDAndNavigate("/plan-trip")}
+                onClick={() => promptNavigate("/plan-trip")}
                 className="px-6 py-3 bg-blue-600 text-white rounded-full hover:bg-blue-700 transition-all ease-in-out"
               >
                 Plan a New Trip
@@ -109,7 +130,7 @@ function Dashboard() {
               {trips.map((trip) => (
                 <div
                   key={trip.id}
-                  onClick={() => promptGTIDAndNavigate("/trip-history")}
+                  onClick={() => promptNavigate("/trip-history")}
                   className="cursor-pointer border rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition transform hover:scale-105 bg-white/80"
                 >
                   <img
@@ -145,7 +166,7 @@ function Dashboard() {
             {suggestedDestinations.map((dest, idx) => (
               <div
                 key={idx}
-                onClick={() => promptGTIDAndNavigate("/plan-trip")}
+                onClick={() => promptNavigate("/plan-trip")}
                 className="border rounded-xl p-6 shadow-lg hover:shadow-xl transition transform hover:scale-105 bg-white/80"
               >
                 <img

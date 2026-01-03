@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from "react";
-import Papa from "papaparse"; // For CSV parsing
+import Papa from "papaparse";
 import placeholder from "../assets/placeholder.jpg";
 
 function SuggestedDestinations() {
   const [spots, setSpots] = useState([]);
-  const [district, setDistrict] = useState("Coimbatore"); // default district
+  const [district, setDistrict] = useState("Coimbatore");
 
   useEffect(() => {
     fetch(require("../assets/tourist_spots.csv"))

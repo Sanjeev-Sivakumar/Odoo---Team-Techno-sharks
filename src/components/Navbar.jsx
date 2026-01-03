@@ -1,4 +1,3 @@
-// src/components/Navbar.jsx
 import React from "react";
 import { useNavigate } from "react-router-dom";
 
@@ -7,7 +6,7 @@ export default function Navbar() {
 
   const handleRoleChange = (e) => {
     const role = e.target.value;
-    localStorage.setItem("userRole", role); // store role in localStorage
+    localStorage.setItem("userRole", role);
     if (role === "Admin") navigate("/admin");
     else navigate("/dashboard");
   };
@@ -38,7 +37,6 @@ export default function Navbar() {
           Trip History
         </button>
 
-        {/* Role selector */}
         <select
           defaultValue={localStorage.getItem("userRole") || "User"}
           onChange={handleRoleChange}

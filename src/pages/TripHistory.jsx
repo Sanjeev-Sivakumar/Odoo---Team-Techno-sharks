@@ -1,12 +1,5 @@
-// src/pages/TripHistory.jsx
 import React, { useState, useEffect } from "react";
-import {
-  PieChart,
-  Pie,
-  Cell,
-  Tooltip,
-  Legend,
-} from "recharts";
+import { PieChart, Pie, Cell, Tooltip, Legend } from "recharts";
 
 const COLORS = ["#0088FE", "#00C49F", "#FFBB28", "#FF8042"];
 
@@ -26,16 +19,14 @@ export default function TripHistory() {
     }
   };
 
-  // Generate daily timeline with meal breaks
   const generateTimeline = (trip) => {
     if (!trip.spots || trip.spots.length === 0) return [];
 
     const timeline = [];
-    let currentHour = 9; // day start at 9am
+    let currentHour = 9;
     let day = 1;
 
     trip.spots.forEach((spot, idx) => {
-      // Add meal breaks if needed
       if (currentHour === 13) {
         timeline.push({ day, activity: "Lunch Break", startTime: "13:00", endTime: "14:00" });
         currentHour = 14;
